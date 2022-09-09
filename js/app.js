@@ -9,18 +9,21 @@ const questions = []
 
 const answers = []
 
-const score
+// const score
 
 const timer = 25
 
 /*------------------------ Cached Element References ------------------------*/
 
 const nickBtnEl = document.getElementById("nick-btn")
-const toonBtnEl = document.getElementById("nick-btn")
-const disneyBtnEl = document.getElementById("nick-btn")
-const randomBtnEl = document.getElementById("nick-btn")
-const resetBtnEl = document.getElementById("nick-btn")
-const mainBtnEL = document.getElementById("nick-btn")
+const toonBtnEl = document.getElementById("toon-btn")
+const disneyBtnEl = document.getElementById("disney-btn")
+const randomBtnEl = document.getElementById("random-btn")
+const submitBtnEl =document.getElementById("finish")
+const resetBtnEl = document.getElementById("reset")
+const mainBtnEL = document.getElementById("return-to-main")
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
