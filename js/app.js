@@ -27,6 +27,12 @@ const mainBtnEL = document.getElementById("return-to-main")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-
+nickBtnEl.addEventListener('click', initNick)
+toonBtnEl.addEventListener('click', initToon)
+disneyBtnEl.addEventListener('click', initDisney)
+randomBtnEl.addEventListener('click', initRandom)
+submitBtnEl.addEventListener('click', submit)
+resetBtnEl.addEventListener('click', reset)
+mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
