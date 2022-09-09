@@ -1,0 +1,30 @@
+const nickAnswers = [
+  "Tommy",
+  "Reptar",
+  "Doug",
+  "Patti",
+  "Arnold",
+  "Helga",
+  "Krusty Crab",
+  "Squidward",
+]
+
+const toonAnswers = [
+  "Chemical X",
+  "Mojo Jojo",
+  "Edd",
+  "Jawbreakers",
+  "Dee dee",
+  "Mandark",
+  "Middle of Nowhere",
+  "Le Quack",
+]
+
+const disneyAnswers = [
+  
+
+
+
+
+
+]
