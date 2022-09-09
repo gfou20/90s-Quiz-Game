@@ -41,3 +41,19 @@ const randomQuestions = [
   "'Bite my shiny metal a**' is a favorite phrase of which Futurama character?",
   "What year was Fry in when he was cryogenically frozen?",
 ]
+
+function getNickQuestions() {
+  return nickQuestions[Math.floor(Math.random() * nickQuestions.length)]
+}
+
+function getToonQuestions() {
+  return toonQuestions[Math.floor(Math.random() * toonQuestions.length)]
+}
+
+function getDisneyQuestions() {
+  return disneyQuestions[Math.floor(math.random() * disneyQuestions.length)]
+}
+
+function getRandomnQuestions() {
+  return randomQuestions[Math.floor(Math.random() * randomQuestions.length)]
+}
