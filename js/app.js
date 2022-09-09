@@ -23,8 +23,6 @@ const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
 
-
-
 /*----------------------------- Event Listeners -----------------------------*/
 
 nickBtnEl.addEventListener('click', initNick)
@@ -36,3 +34,31 @@ resetBtnEl.addEventListener('click', reset)
 mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
+
+function initNick(evt) {
+
+}
+
+function initToon(evt) {
+
+}
+
+function initDisney(evt) {
+
+}
+
+function initRandom(evt) {
+
+}
+
+function submit(evt) {
+
+}
+
+function reset(evt) {
+
+}
+
+function returnMain(evt) {
+  
+}
