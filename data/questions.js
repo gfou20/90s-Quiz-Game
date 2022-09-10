@@ -345,3 +345,14 @@ function getDisneyQuestions() {
 function getRandomnQuestions() {
   return randomQuestions[Math.floor(Math.random() * randomQuestions.length)]
 }
+
+export {
+  getNickQuestions,
+  getToonQuestions,
+  getDisneyQuestions,
+  getRandomnQuestions,
+  nickQuestions,
+  toonQuestions,
+  disneyQuestions,
+  randomQuestions
+}
