@@ -103,7 +103,7 @@ const toonQuestions = [
     correctAnswer: "B"
   },
   {  
-    question: "Which “Ed” was the brains in trio Ed, Edd and Eddy?",
+    question: "Which 'Ed' was the brains in trio Ed, Edd and Eddy?",
     answers: {
       A: "Ed",
       B: "Edd",
@@ -313,7 +313,7 @@ const randomQuestions = [
     answers: {
       A: "Bender",
       B: "Fry",
-      C: "Ziodberg",
+      C: "Zoidberg",
       D: "Leela"
     },
     correctAnswer: "A"
