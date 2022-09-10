@@ -1,4 +1,4 @@
-import {} from "../data/answers.js"
+import {} from "../data/questions.js"
 /*-------------------------------- Constants --------------------------------*/
 
 
@@ -60,5 +60,5 @@ function reset(evt) {
 }
 
 function returnMain(evt) {
-  
+
 }
