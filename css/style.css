@@ -12,6 +12,10 @@ nav {
   justify-content: space-around;
 }
 
+.question {
+  display: flex;
+  justify-content: center;
+}
 /* main {
   display: flex;
   justify-content: space-evenly;
