@@ -46,25 +46,43 @@ randomBtnEl.addEventListener('click', initRandom)
 
 function initNick(evt) {
   const isNick = evt.target.id === "nick-btn"
-  const newNicklQues = {
+  const newNickQues = {
     button: isNick ? getNickQuestions() : null,
-    
   }
-  // console.log(newNicklQues)
-  questions.push(newNicklQues)
+  // console.log(newNickQues)
+  questions.push(newNickQues)
   render()
 }
 
 function initToon(evt) {
-
+  const isToon = evt.target.id === "toon-btn"
+  const newToonQues = {
+    button: isToon ? getToonQuestions() : null,
+  }
+  // console.log(newToonQues)
+  questions.push(newToonQues)
+  render()
 }
 
 function initDisney(evt) {
-
+  const isDisney = evt.target.id === "disney-btn"
+  const newDisneyQues = {
+    button: isDisney ? getDisneyQuestions() : null,
+    
+  }
+  // console.log(newDisneyQues)
+  questions.push(newDisneyQues)
+  render()
 }
 
 function initRandom(evt) {
-
+  const isRandom = evt.target.id === "random-btn"
+  const newRandomQues = {
+    button: isRandom ? getRandomQuestions() : null,
+  }
+  // console.log(newRandomQues)
+  questions.push(newRandomQues)
+  render()
 }
 
 function render() {

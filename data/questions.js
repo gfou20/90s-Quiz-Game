@@ -342,7 +342,7 @@ function getDisneyQuestions() {
   return disneyQuestions[Math.floor(math.random() * disneyQuestions.length)]
 }
 
-function getRandomnQuestions() {
+function getRandomQuestions() {
   return randomQuestions[Math.floor(Math.random() * randomQuestions.length)]
 }
 
@@ -350,7 +350,7 @@ export {
   getNickQuestions,
   getToonQuestions,
   getDisneyQuestions,
-  getRandomnQuestions,
+  getRandomQuestions,
   nickQuestions,
   toonQuestions,
   disneyQuestions,
