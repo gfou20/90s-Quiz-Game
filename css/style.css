@@ -6,7 +6,7 @@ body {
   background-image: url("https://img.freepik.com/free-vector/flat-comic-style-background_23-2148882944.jpg?w=2000");
   background-position: center;
   background-repeat: no-repeat;
-
+}
 nav {
   display: flex;
   justify-content: space-around;

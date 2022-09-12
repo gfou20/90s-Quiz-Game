@@ -1,4 +1,4 @@
-import {} from "../data/questions.js"
+import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomnQuestions,} from "../data/questions.js"
 /*-------------------------------- Constants --------------------------------*/
 
 
@@ -11,7 +11,17 @@ const answers = []
 
 // const score
 
-const timer = 25
+let timeLeft = 25
+
+let timer = setInterval(() => {
+  timeLeft -= 1
+  countdownEl.textContent = timeLeft + ' seconds remaining'
+  if(timeLeft === 0) {
+    countdownEl.textContent = 'Times Up!'
+    clearInterval(timer)
+  }
+}, 1000)
+
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -22,7 +32,7 @@ const randomBtnEl = document.getElementById("random-btn")
 const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
-
+let countdownEl = document.getElementById('countdown')
 /*----------------------------- Event Listeners -----------------------------*/
 
 nickBtnEl.addEventListener('click', initNick)
