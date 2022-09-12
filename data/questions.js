@@ -339,7 +339,7 @@ function getToonQuestions() {
 }
 
 function getDisneyQuestions() {
-  return disneyQuestions[Math.floor(math.random() * disneyQuestions.length)]
+  return disneyQuestions[Math.floor(Math.random() * disneyQuestions.length)]
 }
 
 function getRandomQuestions() {

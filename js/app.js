@@ -1,4 +1,4 @@
-import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomnQuestions,} from "../data/questions.js"
+import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomQuestions,} from "../data/questions.js"
 /*-------------------------------- Constants --------------------------------*/
 
 
@@ -49,7 +49,7 @@ function initNick(evt) {
   const newNickQues = {
     button: isNick ? getNickQuestions() : null,
   }
-  // console.log(newNickQues)
+  console.log(newNickQues)
   questions.push(newNickQues)
   render()
 }
@@ -59,7 +59,7 @@ function initToon(evt) {
   const newToonQues = {
     button: isToon ? getToonQuestions() : null,
   }
-  // console.log(newToonQues)
+  console.log(newToonQues)
   questions.push(newToonQues)
   render()
 }
@@ -70,7 +70,7 @@ function initDisney(evt) {
     button: isDisney ? getDisneyQuestions() : null,
     
   }
-  // console.log(newDisneyQues)
+  console.log(newDisneyQues)
   questions.push(newDisneyQues)
   render()
 }
@@ -80,7 +80,7 @@ function initRandom(evt) {
   const newRandomQues = {
     button: isRandom ? getRandomQuestions() : null,
   }
-  // console.log(newRandomQues)
+  console.log(newRandomQues)
   questions.push(newRandomQues)
   render()
 }
