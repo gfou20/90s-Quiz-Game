@@ -2,82 +2,82 @@ const nickQuestions = [
   {
     question: "Which character was the brave leader of the Rugrats?",
     answers: {
-      A: "Chuckie",
-      B: "Angelica",
-      C: "Tommy",
-      D: "Dill"
+      a: "Chuckie",
+      b: "Angelica",
+      c: "Tommy",
+      d: "Dill"
     },
-    correctAnswer: "C"
+    correctAnswer: "c"
   }, 
   {
     question: "What was the name of the dinosaur the Rugrats admired?",
     answers: {
-      A: "Rugar",
-      B: "Reptar",
-      C: "Resgar",
-      D: "Repter"
+      a: "Rugar",
+      b: "Reptar",
+      c: "Resgar",
+      d: "Repter"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "Which show focused on the adolescent life of a teen living in Bluffington?",
     answers: {
-      A: "Doug",
-      B: "Dave",
-      C: "My Teenage Robot Life",
-      D: "As Told by Ginger"
+      a: "Doug",
+      b: "Dave",
+      c: "My Teenage Robot Life",
+      d: "As Told by Ginger"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },  
   {
     question: "Who was the secret love interest of the the main character in Doug?",
     answers: {
-      A: "Ginger",
-      B: "Skeeter",
-      C: "Beebe",
-      D: "Patti"
+      a: "Ginger",
+      b: "Skeeter",
+      c: "Beebe",
+      d: "Patti"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   },
   {  
     question: "Which character was known as 'football head'?",
     answers: {
-      A: "Gerald",
-      B: "Harold",
-      C: "Arnold",
-      D: "Danny"
+      a: "Gerald",
+      b: "Harold",
+      c: "Arnold",
+      d: "Danny"
     },
-    correctAnswer: "C"
+    correctAnswer: "c"
   },
   {  
     question: "Which character always made fun of Arnold, but secretly liked him?",
     answers: {
-      A: "Helga",
-      B: "Helena",
-      C: "Phoebe",
-      D: "Lila"
+      a: "Helga",
+      b: "Helena",
+      c: "Phoebe",
+      d: "Lila"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "What is the name of the restaurant SpongeBob works at?",
     answers: {
-      A: "Chum Bucket",
-      B: "Krusty Crab",
-      C: "Good Burger",
-      D: "Crusty Crab"
+      a: "Chum Bucket",
+      b: "Krusty Crab",
+      c: "Good Burger",
+      d: "Crusty Crab"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "What is the name of Spongebob’s neighbor who always wants to be left alone?",
     answers: {
-      A: "Patrick",
-      B: "Gary",
-      C: "Squidward",
-      D: "Mr.Krabs"
+      a: "Patrick",
+      b: "Gary",
+      c: "Squidward",
+      d: "Mr.Krabs"
     },
-    correctAnswer: "C"
+    correctAnswer: "c"
   }  
 ]
 
@@ -85,82 +85,82 @@ const toonQuestions = [
   {
     question: "What was the accidental ingredient that created the PowerPuff girls?",
     answers: {
-      A: "Sugar",
-      B: "Spice",
-      C: "Chemical Y",
-      D: "Chemical X"
+      a: "Sugar",
+      b: "Spice",
+      c: "Chemical Y",
+      d: "Chemical X"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   },
   {  
     question: "Which character used to be friends with Professor Utonium?",
     answers: {
-      A: "Miss Bellum",
-      B: "Mojo Jojo",
-      C: "Princess Morbucks",
-      D: "HIM"
+      a: "Miss Bellum",
+      b: "Mojo Jojo",
+      c: "Princess Morbucks",
+      d: "HIM"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "Which 'Ed' was the brains in trio Ed, Edd and Eddy?",
     answers: {
-      A: "Ed",
-      B: "Edd",
-      C: "Eddy",
-      D: "None of them were smart"
+      a: "Ed",
+      b: "Edd",
+      c: "Eddy",
+      d: "None of them were smart"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "What was Ed, Edd and Eddy’s favorite candy?",
     answers: {
-      A: "Chocolate Bars",
-      B: "Jawbreakers",
-      C: "Lollipops",
-      D: "Gummies"
+      a: "Chocolate Bars",
+      b: "Jawbreakers",
+      c: "Lollipops",
+      d: "Gummies"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "What was the name of Dexter’s annoying sister?",
     answers: {
-      A: "Debs",
-      B: "Dee Bee",
-      C: "Dee Dee",
-      D: "Denise"
+      a: "Debs",
+      b: "Dee Bee",
+      c: "Dee Dee",
+      d: "Denise"
     },
-    correctAnswer: "C"
+    correctAnswer: "c"
   },
   {  
     question: "Who was Dexter’s biggest rival?",
     answers: {
-      A: "Mojo Jojo",
-      B: "Mandark",
-      C: "Mandork",
-      D: "Mandarin"
+      a: "Mojo Jojo",
+      b: "Mandark",
+      c: "Mandork",
+      d: "Mandarin"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "Where did Courage, Muriel and Eustace live?",
     answers: {
-      A: "Middle of Nowhere",
-      B: "Townsville",
-      C: "Dimmsdale",
-      D: "Gravity Falls"
+      a: "Middle of Nowhere",
+      b: "Townsville",
+      c: "Dimmsdale",
+      d: "Gravity Falls"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "Which of these characters made an appearance in Courage the Cowardly Dog?",
     answers: {
-      A: "Le Quack",
-      B: "The RowdyRuff Boys",
-      C: "Johnny Bravo",
-      D: "Finn"
+      a: "Le Quack",
+      b: "The RowdyRuff Boys",
+      c: "Johnny Bravo",
+      d: "Finn"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   }  
 ]
 
@@ -168,82 +168,82 @@ const disneyQuestions = [
   {
     question: "Where do the Gargoyles wake up after being petrified for a thousand years?",
     answers: {
-      A: "Scotland",
-      B: "New York City",
-      C: "London",
-      D: "Los Angeles"
+      a: "Scotland",
+      b: "New York City",
+      c: "London",
+      d: "Los Angeles"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "What was the name of the leader of the Gargoyles?",
     answers: {
-      A: "Lexington",
-      B: "Xanatos",
-      C: "Demona",
-      D: "Goliath"
+      a: "Lexington",
+      b: "Xanatos",
+      c: "Demona",
+      d: "Goliath"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   },
   {  
     question: "What was the favorite quote used to describe the lifestyle philosophy of Timon and Pumbaa?",
     answers: {
-      A: "Hakuna Matata",
-      B: "Hakulla Matata",
-      C: "Laguna Matata",
-      D: "Akuma Matata"
+      a: "Hakuna Matata",
+      b: "Hakulla Matata",
+      c: "Laguna Matata",
+      d: "Akuma Matata"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "What animals were Timon and Pumbaa?",
     answers: {
-      A: "Lion Cub and Warthog",
-      B: "Meerkat and Warthog",
-      C: "Monkey and Meerkat",
-      D: "Rabbit and Warthog"
+      a: "Lion Cub and Warthog",
+      b: "Meerkat and Warthog",
+      c: "Monkey and Meerkat",
+      d: "Rabbit and Warthog"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "What is the name of Aladdin’s best friend?",
     answers: {
-      A: "Abu",
-      B: "Iago",
-      C: "Rajah",
-      D: "Jafar"
+      a: "Abu",
+      b: "Iago",
+      c: "Rajah",
+      d: "Jafar"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "Where did Aladdin find the Genie’s lamp?",
     answers: {
-      A: "Cave of Wishes",
-      B: "Cave of Wonders",
-      C: "Cave of Sand",
-      D: "Cave of Mystery"
+      a: "Cave of Wishes",
+      b: "Cave of Wonders",
+      c: "Cave of Sand",
+      d: "Cave of Mystery"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "How did Pepper Ann usually show her emotions?",
     answers: {
-      A: "Fantasies",
-      B: "Loud Outbursts",
-      C: "Crying",
-      D: "Laughing"
+      a: "Fantasies",
+      b: "Loud Outbursts",
+      c: "Crying",
+      d: "Laughing"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "Pepper Ann was the first Disney animated tv series to:",
     answers: {
-      A: "discuss serious world issues",
-      B: "discuss serious health issues",
-      C: "have a female lead protagonist",
-      D: "be created by a woman"
+      a: "discuss serious world issues",
+      b: "discuss serious health issues",
+      c: "have a female lead protagonist",
+      d: "be created by a woman"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   }  
 ]
 
@@ -251,82 +251,82 @@ const randomQuestions = [
   {
     question: "What was the name of Space Ghost’s enemy turned friend?",
     answers: {
-      A: "Brak",
-      B: "Voldemort",
-      C: "Tak",
-      D: "Jak"
+      a: "Brak",
+      b: "Voldemort",
+      c: "Tak",
+      d: "Jak"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "Space Ghost went from fighting crime to:",
     answers: {
-      A: "flipping burgers",
-      B: "a retired drunk",
-      C: "commiting crimes",
-      D: "a late night talk show host"
+      a: "flipping burgers",
+      b: "a retired drunk",
+      c: "commiting crimes",
+      d: "a late night talk show host"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   },
   {  
     question: "Which South Park character always comes back after dying?",
     answers: {
-      A: "Cartman",
-      B: "Kenny",
-      C: "Stan",
-      D: "Butters"
+      a: "Cartman",
+      b: "Kenny",
+      c: "Stan",
+      d: "Butters"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "Where does South Park take place?",
     answers: {
-      A: "Nevada",
-      B: "Colorado",
-      C: "Alaska",
-      D: "Ohio"
+      a: "Nevada",
+      b: "Colorado",
+      c: "Alaska",
+      d: "Ohio"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "Which Family Guy character usually fights Peter 'on sight'?",
     answers: {
-      A: "The Evil Monkey",
-      B: "Kool Aid Man",
-      C: "Seamus",
-      D: "Ernie the Giant Chicken"
+      a: "The Evil Monkey",
+      b: "Kool Aid Man",
+      c: "Seamus",
+      d: "Ernie the Giant Chicken"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   },
   {  
     question: "Which Family Guy character usually gives a 'Giggity' as perverse behavior?",
     answers: {
-      A: "Joe",
-      B: "Quagmire",
-      C: "Cleveland",
-      D: "Peter"
+      a: "Joe",
+      b: "Quagmire",
+      c: "Cleveland",
+      d: "Peter"
     },
-    correctAnswer: "B"
+    correctAnswer: "b"
   },
   {  
     question: "'Bite my shiny metal a**' is a favorite phrase of which Futurama character?",
     answers: {
-      A: "Bender",
-      B: "Fry",
-      C: "Zoidberg",
-      D: "Leela"
+      a: "Bender",
+      b: "Fry",
+      c: "Zoidberg",
+      d: "Leela"
     },
-    correctAnswer: "A"
+    correctAnswer: "a"
   },
   {  
     question: "What year was Fry in when he was cryogenically frozen?",
     answers: {
-      A: "1999",
-      B: "2001",
-      C: "1998",
-      D: "2000"
+      a: "1999",
+      b: "2001",
+      c: "1998",
+      d: "2000"
     },
-    correctAnswer: "D"
+    correctAnswer: "d"
   }  
 ]
 

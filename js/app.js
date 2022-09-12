@@ -1,4 +1,4 @@
-import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomQuestions,} from "../data/questions.js"
+import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomQuestions, nickQuestions,} from "../data/questions.js"
 /*-------------------------------- Constants --------------------------------*/
 
 
@@ -7,7 +7,7 @@ import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomQuestion
 
 const questions = []
 
-// const score
+const answers = []
 
 let timeLeft = 25
 
@@ -27,6 +27,7 @@ const nickBtnEl = document.getElementById("nick-btn")
 const toonBtnEl = document.getElementById("toon-btn")
 const disneyBtnEl = document.getElementById("disney-btn")
 const randomBtnEl = document.getElementById("random-btn")
+let quizContainerEL = document.getElementById("quizzes")
 const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
@@ -34,7 +35,7 @@ let countdownEl = document.getElementById('countdown')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-// nickBtnEl.addEventListener('click', initNick)
+nickBtnEl.addEventListener('click', nickQuiz)
 // toonBtnEl.addEventListener('click', initToon)
 // disneyBtnEl.addEventListener('click', initDisney)
 // randomBtnEl.addEventListener('click', initRandom)
@@ -55,7 +56,26 @@ let countdownEl = document.getElementById('countdown')
 // }
 
 function nickQuiz() {
+  nickBtnEl.style.visibility = 'hidden'
   
+  nickQuestions.forEach((currentQues, quesNum) => {
+    
+    for(letter in currentQues.answers) {
+      answers.push(
+        `<label>
+        <input type="radio" name="question${quesNum}" value="${letter}">
+        ${letter} : 
+        ${currentQues.answers[letter]}
+        </label>`
+      )
+    }
+    questions.push(
+      `<div class="question"> ${currentQues.question}</div>
+      <div class="answers"> ${answers.join("")}</div>`
+    )
+    quizContainerEL.textContent = questions.join("")
+  })
+  let isNick = getNickQuestions()
 }
 
 
