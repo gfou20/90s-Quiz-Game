@@ -7,8 +7,6 @@ import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomnQuestio
 
 const questions = []
 
-const answers = []
-
 // const score
 
 let timeLeft = 25
@@ -40,27 +38,21 @@ nickBtnEl.addEventListener('click', initNick)
 toonBtnEl.addEventListener('click', initToon)
 disneyBtnEl.addEventListener('click', initDisney)
 randomBtnEl.addEventListener('click', initRandom)
-submitBtnEl.addEventListener('click', submit)
-resetBtnEl.addEventListener('click', reset)
-mainBtnEL.addEventListener('click', returnMain)
+// submitBtnEl.addEventListener('click', submit)
+// resetBtnEl.addEventListener('click', reset)
+// mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
 
-function initNick(questions, quizContainer, resultContainer, submitButton) {
-  
-  function displayQuestions(questions, quizContainer) {
-
+function initNick(evt) {
+  const isNick = evt.target.id === "nick-btn"
+  const newNicklQues = {
+    button: isNick ? getNickQuestions() : null,
+    
   }
-
-  function displayResults(questions, quizContainer, resultContainer) {
-
-  }
-
-  displayQuestions(questions, quizContainer)
-
-  submitButton.onclick = function() {
-    displayResults(questions, quizContainer, resultContainer)
-  }
+  // console.log(newNicklQues)
+  questions.push(newNicklQues)
+  render()
 }
 
 function initToon(evt) {
@@ -75,14 +67,18 @@ function initRandom(evt) {
 
 }
 
-function submit(evt) {
+function render() {
 
 }
 
-function reset(evt) {
+// function submit(evt) {
+
+// }
+
+// function reset(evt) {
   
-}
+// }
 
-function returnMain(evt) {
+// function returnMain(evt) {
 
-}
+// }
