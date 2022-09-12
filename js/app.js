@@ -27,7 +27,7 @@ const nickBtnEl = document.getElementById("nick-btn")
 const toonBtnEl = document.getElementById("toon-btn")
 const disneyBtnEl = document.getElementById("disney-btn")
 const randomBtnEl = document.getElementById("random-btn")
-let quizContainerEL = document.getElementById("quizzes")
+let quizContainerEL = document.getElementById("nickelodean")
 const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
@@ -60,7 +60,7 @@ function nickQuiz() {
   
   nickQuestions.forEach((currentQues, quesNum) => {
     
-    for(letter in currentQues.answers) {
+    for(let letter in currentQues.answers) {
       answers.push(
         `<label>
         <input type="radio" name="question${quesNum}" value="${letter}">
@@ -71,12 +71,13 @@ function nickQuiz() {
     }
     questions.push(
       `<div class="question"> ${currentQues.question}</div>
-      <div class="answers"> ${answers.join("")}</div>`
+      <div class="answer"> ${answers.join("")}</div>`
     )
     quizContainerEL.textContent = questions.join("")
   })
   let isNick = getNickQuestions()
 }
+nickQuiz
 
 
 
