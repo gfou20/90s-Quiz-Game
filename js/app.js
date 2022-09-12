@@ -34,60 +34,67 @@ let countdownEl = document.getElementById('countdown')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
-nickBtnEl.addEventListener('click', initNick)
-toonBtnEl.addEventListener('click', initToon)
-disneyBtnEl.addEventListener('click', initDisney)
-randomBtnEl.addEventListener('click', initRandom)
+// nickBtnEl.addEventListener('click', initNick)
+// toonBtnEl.addEventListener('click', initToon)
+// disneyBtnEl.addEventListener('click', initDisney)
+// randomBtnEl.addEventListener('click', initRandom)
 // submitBtnEl.addEventListener('click', submit)
 // resetBtnEl.addEventListener('click', reset)
 // mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
 
-function initNick(evt) {
-  const isNick = evt.target.id === "nick-btn"
-  const newNickQues = {
-    button: isNick ? getNickQuestions() : null,
-  }
-  console.log(newNickQues)
-  questions.push(newNickQues)
-  render()
+// function initNick(evt) {
+//   const isNick = evt.target.id === "nick-btn"
+//   const newNickQues = {
+//     button: isNick ? getNickQuestions() : null,
+//   }
+//   console.log(newNickQues)
+//   questions.push(newNickQues)
+//   // render()
+// }
+
+function nickQuiz() {
+  
 }
 
-function initToon(evt) {
-  const isToon = evt.target.id === "toon-btn"
-  const newToonQues = {
-    button: isToon ? getToonQuestions() : null,
-  }
-  console.log(newToonQues)
-  questions.push(newToonQues)
-  render()
-}
 
-function initDisney(evt) {
-  const isDisney = evt.target.id === "disney-btn"
-  const newDisneyQues = {
-    button: isDisney ? getDisneyQuestions() : null,
+
+
+// function initToon(evt) {
+//   const isToon = evt.target.id === "toon-btn"
+//   const newToonQues = {
+//     button: isToon ? getToonQuestions() : null,
+//   }
+//   console.log(newToonQues)
+//   questions.push(newToonQues)
+//   render()
+// }
+
+// function initDisney(evt) {
+//   const isDisney = evt.target.id === "disney-btn"
+//   const newDisneyQues = {
+//     button: isDisney ? getDisneyQuestions() : null,
     
-  }
-  console.log(newDisneyQues)
-  questions.push(newDisneyQues)
-  render()
-}
+//   }
+//   console.log(newDisneyQues)
+//   questions.push(newDisneyQues)
+//   render()
+// }
 
-function initRandom(evt) {
-  const isRandom = evt.target.id === "random-btn"
-  const newRandomQues = {
-    button: isRandom ? getRandomQuestions() : null,
-  }
-  console.log(newRandomQues)
-  questions.push(newRandomQues)
-  render()
-}
+// function initRandom(evt) {
+//   const isRandom = evt.target.id === "random-btn"
+//   const newRandomQues = {
+//     button: isRandom ? getRandomQuestions() : null,
+//   }
+//   console.log(newRandomQues)
+//   questions.push(newRandomQues)
+//   render()
+// }
 
-function render() {
-
-}
+// function render() {
+  
+// }
 
 // function submit(evt) {
 
