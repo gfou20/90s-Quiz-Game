@@ -46,8 +46,21 @@ mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
 
-function initNick(evt) {
-  const isNick = evt.target.id === "nick-btn"
+function initNick(questions, quizContainer, resultContainer, submitButton) {
+  
+  function displayQuestions(questions, quizContainer) {
+
+  }
+
+  function displayResults(questions, quizContainer, resultContainer) {
+
+  }
+
+  displayQuestions(questions, quizContainer)
+
+  submitButton.onclick = function() {
+    displayResults(questions, quizContainer, resultContainer)
+  }
 }
 
 function initToon(evt) {
