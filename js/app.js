@@ -73,7 +73,7 @@ function nickQuiz() {
       `<div class="question"> ${currentQues.question}</div>
       <div class="answer"> ${answers.join("")}</div>`
     )
-    quizContainerEL.textContent = questions.join("")
+    quizContainerEL.innerHTML = questions.join("")
   })
   let isNick = getNickQuestions()
 }
@@ -113,9 +113,9 @@ nickQuiz
 //   render()
 // }
 
-// function render() {
-  
-// }
+function render() {
+
+}
 
 // function submit(evt) {
 
