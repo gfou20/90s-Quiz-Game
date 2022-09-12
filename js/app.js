@@ -33,6 +33,7 @@ const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
 let countdownEl = document.getElementById('countdown')
+
 /*----------------------------- Event Listeners -----------------------------*/
 
 nickBtnEl.addEventListener('click', initNick)
@@ -46,7 +47,7 @@ mainBtnEL.addEventListener('click', returnMain)
 /*-------------------------------- Functions --------------------------------*/
 
 function initNick(evt) {
-
+  const isNick = evt.target.id === "nick-btn"
 }
 
 function initToon(evt) {
@@ -66,7 +67,7 @@ function submit(evt) {
 }
 
 function reset(evt) {
-
+  
 }
 
 function returnMain(evt) {
