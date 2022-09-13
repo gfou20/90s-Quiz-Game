@@ -1,4 +1,4 @@
-import {getNickQuestions, getToonQuestions, getDisneyQuestions,getRandomQuestions,nickQuestions, toonQuestions, disneyQuestions, randomQuestions,} from "../data/questions.js"
+import {nickQuestions, toonQuestions, disneyQuestions, randomQuestions} from "../data/questions.js"
 /*-------------------------------- Constants --------------------------------*/
 
 

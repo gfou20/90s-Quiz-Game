@@ -330,39 +330,10 @@ const randomQuestions = [
   }  
 ]
 
-function getNickQuestions() {
-return nickQuestions[Math.floor(Math.random() * nickQuestions.length)]
-}
-
-function getToonQuestions() {
-  return toonQuestions[Math.floor(Math.random() * toonQuestions.length)]
-}
-
-function getDisneyQuestions() {
-  return disneyQuestions[Math.floor(Math.random() * disneyQuestions.length)]
-}
-
-function getRandomQuestions() {
-  return randomQuestions[Math.floor(Math.random() * randomQuestions.length)]
-}
-
 export {
-  getNickQuestions,
-  getToonQuestions,
-  getDisneyQuestions,
-  getRandomQuestions,
   nickQuestions,
   toonQuestions,
   disneyQuestions,
   randomQuestions
 }
 
-// let ranNickQuestions = []
-// let i = nickQuestions.length
-// let q = 0
-
-// while(i--) {
-//   q = Math.floor(Math.random() * (i+1))
-//   ranNickQuestions.push(nickQuestions[q])
-//   nickQuestions.splice(q, 1)
-// }
