@@ -40,7 +40,7 @@ nickBtnEl.addEventListener('click', nickQuiz)
 toonBtnEl.addEventListener('click', toonQuiz)
 disneyBtnEl.addEventListener('click', disneyQuiz)
 randomBtnEl.addEventListener('click', randomQuiz)
-
+quizContainerEL.addEventListener('click', handleClick)
 // submitBtnEl.addEventListener('click', submit)
 // resetBtnEl.addEventListener('click', reset)
 // mainBtnEL.addEventListener('click', returnMain)
@@ -63,28 +63,24 @@ function renderQuestion(quesObj) {
 
 
 function nickQuiz() {
-  nickBtnEl.style.visibility = 'hidden'
   nickQuestions.forEach(q => {
     renderQuestion(q)
   })
 }
 
 function toonQuiz() {
-  toonBtnEl.style.visibility = 'hidden'
   toonQuestions.forEach(q => {
     renderQuestion(q)
   })
 }
 
 function disneyQuiz() {
-  disneyBtnEl.style.visibility = 'hidden'
   disneyQuestions.forEach(q => {
     renderQuestion(q)
   })
 }
 
 function randomQuiz() {
-  randomBtnEl.style.visibility = 'hidden'
   randomQuestions.forEach(q => {
     renderQuestion(q)
   })
@@ -92,8 +88,9 @@ function randomQuiz() {
 
 function handleClick() {
   nickBtnEl.style.visibility = 'hidden'
-  nickQuiz()
-  
+  toonBtnEl.style.visibility = 'hidden'
+  disneyBtnEl.style.visibility = 'hidden'
+  randomBtnEl.style.visibility = 'hidden'
 }
 // function submit(evt) {
 
