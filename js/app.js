@@ -46,15 +46,6 @@ randomBtnEl.addEventListener('click', randomQuiz)
 
 /*-------------------------------- Functions --------------------------------*/
 
-// function initNick(evt) {
-//   const isNick = evt.target.id === "nick-btn"
-//   const newNickQues = {
-//     button: isNick ? getNickQuestions() : null,
-//   }
-//   console.log(newNickQues)
-//   questions.push(newNickQues)
-//   // render()
-// }
 function renderQuestion(quesObj) {
   const question = document.createElement('p')
   question.textContent = quesObj.question
@@ -72,7 +63,6 @@ function renderQuestion(quesObj) {
 
 function nickQuiz() {
   nickBtnEl.style.visibility = 'hidden'
-  // renderQuestion(nickQuestions[0])
   nickQuestions.forEach(q => {
     renderQuestion(q)
   })
@@ -80,102 +70,104 @@ function nickQuiz() {
 
 function toonQuiz() {
   toonBtnEl.style.visibility = 'hidden'
-  
-  toonQuestions.forEach((currentQues, quesNum) => {
-    
-    for(let letter in currentQues.answers) {
-      answers.push(
-        `<label>
-        <input type="radio" name="question${quesNum}" value="${letter}">
-        ${letter} : 
-        ${currentQues.answers[letter]}
-        </label>`
-      )
-    }
-    questions.push(
-      `<div class="question"> ${currentQues.question}</div>
-      <div class="answer"> ${answers.join("")}</div>`
-    )
-    quizContainerEL.innerHTML = questions.join("")
+  toonQuestions.forEach(q => {
+    renderQuestion(q)
   })
-  
 }
-toonQuiz
-
-
 
 function disneyQuiz() {
-  toonBtnEl.style.visibility = 'hidden'
-  
-  disneyQuestions.forEach((currentQues, quesNum) => {
-    
-    for(let letter in currentQues.answers) {
-      answers.push(
-        `<label>
-        <input type="radio" name="question${quesNum}" value="${letter}">
-        ${letter} : 
-        ${currentQues.answers[letter]}
-        </label>`
-      )
-    }
-    questions.push(
-      `<div class="question"> ${currentQues.question}</div>
-      <div class="answer"> ${answers.join("")}</div>`
-    )
-    quizContainerEL.innerHTML = questions.join("")
+  disneyBtnEl.style.visibility = 'hidden'
+  disneyQuestions.forEach(q => {
+    renderQuestion(q)
   })
-  
 }
-disneyQuiz
-
-// function initDisney(evt) {
-//   const isDisney = evt.target.id === "disney-btn"
-//   const newDisneyQues = {
-//     button: isDisney ? getDisneyQuestions() : null,
-    
-//   }
-//   console.log(newDisneyQues)
-//   questions.push(newDisneyQues)
-//   render()
-// }
 
 function randomQuiz() {
-  toonBtnEl.style.visibility = 'hidden'
-  
-  randomQuestions.forEach((currentQues, quesNum) => {
-    
-    for(let letter in currentQues.answers) {
-      answers.push(
-        `<label>
-        <input type="radio" name="question${quesNum}" value="${letter}">
-        ${letter} : 
-        ${currentQues.answers[letter]}
-        </label>`
-      )
-    }
-    questions.push(
-      `<div class="question"> ${currentQues.question}</div>
-      <div class="answer"> ${answers.join("")}</div>`
-    )
-    quizContainerEL.innerHTML = questions.join("")
+  randomBtnEl.style.visibility = 'hidden'
+  randomQuestions.forEach(q => {
+    renderQuestion(q)
   })
-  
 }
-randomQuiz
 
-// function initRandom(evt) {
-//   const isRandom = evt.target.id === "random-btn"
-//   const newRandomQues = {
-//     button: isRandom ? getRandomQuestions() : null,
-//   }
-//   console.log(newRandomQues)
-//   questions.push(newRandomQues)
-//   render()
+// function toonQuiz() {
+//   toonBtnEl.style.visibility = 'hidden'
+  
+//   toonQuestions.forEach((currentQues, quesNum) => {
+    
+//     for(let letter in currentQues.answers) {
+//       answers.push(
+//         `<label>
+//         <input type="radio" name="question${quesNum}" value="${letter}">
+//         ${letter} : 
+//         ${currentQues.answers[letter]}
+//         </label>`
+//       )
+//     }
+//     questions.push(
+//       `<div class="question"> ${currentQues.question}</div>
+//       <div class="answer"> ${answers.join("")}</div>`
+//     )
+//     quizContainerEL.innerHTML = questions.join("")
+//   })
+  
 // }
+// toonQuiz
 
-// function render() {
 
+
+// function disneyQuiz() {
+//   toonBtnEl.style.visibility = 'hidden'
+  
+//   disneyQuestions.forEach((currentQues, quesNum) => {
+    
+//     for(let letter in currentQues.answers) {
+//       answers.push(
+//         `<label>
+//         <input type="radio" name="question${quesNum}" value="${letter}">
+//         ${letter} : 
+//         ${currentQues.answers[letter]}
+//         </label>`
+//       )
+//     }
+//     questions.push(
+//       `<div class="question"> ${currentQues.question}</div>
+//       <div class="answer"> ${answers.join("")}</div>`
+//     )
+//     quizContainerEL.innerHTML = questions.join("")
+//   })
+  
 // }
+// disneyQuiz
+
+
+
+// function randomQuiz() {
+//   toonBtnEl.style.visibility = 'hidden'
+  
+//   randomQuestions.forEach((currentQues, quesNum) => {
+    
+//     for(let letter in currentQues.answers) {
+//       answers.push(
+//         `<label>
+//         <input type="radio" name="question${quesNum}" value="${letter}">
+//         ${letter} : 
+//         ${currentQues.answers[letter]}
+//         </label>`
+//       )
+//     }
+//     questions.push(
+//       `<div class="question"> ${currentQues.question}</div>
+//       <div class="answer"> ${answers.join("")}</div>`
+//     )
+//     quizContainerEL.innerHTML = questions.join("")
+//   })
+  
+// }
+// randomQuiz
+
+
+
+
 
 // function submit(evt) {
 
