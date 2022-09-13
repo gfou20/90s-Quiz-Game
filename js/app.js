@@ -28,8 +28,10 @@ const toonBtnEl = document.getElementById("toon-btn")
 const disneyBtnEl = document.getElementById("disney-btn")
 const randomBtnEl = document.getElementById("random-btn")
 let quizContainerEL = document.getElementById("quizzes")
+const pEl = document.querySelectorAll(".quiz-text")
+const quizBtnEL =document.querySelectorAll(".quiz-btns")
 // const submitBtnEl =document.getElementById("finish")
-// const resetBtnEl = document.getElementById("reset")
+// const resetBtnEl = document.getElementById("reset-btn")
 const mainBtnEL = document.getElementById("return-to-main")
 const quizArea = document.getElementById("quiz")
 let countdownEl = document.getElementById('countdown')
@@ -40,9 +42,12 @@ nickBtnEl.addEventListener('click', nickQuiz)
 toonBtnEl.addEventListener('click', toonQuiz)
 disneyBtnEl.addEventListener('click', disneyQuiz)
 randomBtnEl.addEventListener('click', randomQuiz)
-quizContainerEL.addEventListener('click', handleClick)
+quizBtnEL.forEach(b => {
+  b.addEventListener('click', handleClick)
+})
+// quizArea.addEventListener('click', handleClick)
 // submitBtnEl.addEventListener('click', submit)
-// resetBtnEl.addEventListener('click', reset)
+// resetBtnEl.addEventListener('reset', renderQuestion)
 // mainBtnEL.addEventListener('click', returnMain)
 
 /*-------------------------------- Functions --------------------------------*/
@@ -92,6 +97,7 @@ function handleClick() {
   disneyBtnEl.style.visibility = 'hidden'
   randomBtnEl.style.visibility = 'hidden'
 }
+
 // function submit(evt) {
 
 // }
