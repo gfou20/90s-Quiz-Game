@@ -32,6 +32,7 @@ const submitBtnEl =document.getElementById("finish")
 const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
 let countdownEl = document.getElementById('countdown')
+const quizArea = document.getElementById("quiz")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -54,31 +55,28 @@ randomBtnEl.addEventListener('click', randomQuiz)
 //   questions.push(newNickQues)
 //   // render()
 // }
+function renderQuestion(quesObj) {
+  const question = document.createElement('p')
+  question.textContent = quesObj.question
+  const btn1 = document.createElement('button')
+  const btn2 = document.createElement('button')
+  const btn3 = document.createElement('button')
+  const btn4 = document.createElement('button')
+  btn1.textContent = quesObj.answers.a
+  btn2.textContent = quesObj.answers.b
+  btn3.textContent = quesObj.answers.c
+  btn4.textContent = quesObj.answers.d
+  quizArea.append(question, btn1, btn2, btn3, btn4)
+}
+
 
 function nickQuiz() {
   nickBtnEl.style.visibility = 'hidden'
-  
-  nickQuestions.forEach((currentQues, quesNum) => {
-    
-    for(let letter in currentQues.answers) {
-      answers.push(
-        `<label>
-        <input type="radio" name="question${quesNum}" value="${letter}">
-        ${letter} : 
-        ${currentQues.answers[letter]}
-        </label>`
-      )
-    }
-    questions.push(
-      `<div class="question"> ${currentQues.question}</div>
-      <div class="answer"> ${answers.join("")}</div>`
-    )
-    quizContainerEL.innerHTML = questions.join("")
+  // renderQuestion(nickQuestions[0])
+  nickQuestions.forEach(q => {
+    renderQuestion(q)
   })
-  // let isNick = getNickQuestions()
-  // console.log(isNick)
 }
-nickQuiz
 
 function toonQuiz() {
   toonBtnEl.style.visibility = 'hidden'
@@ -105,15 +103,6 @@ function toonQuiz() {
 toonQuiz
 
 
-// function initToon(evt) {
-//   const isToon = evt.target.id === "toon-btn"
-//   const newToonQues = {
-//     button: isToon ? getToonQuestions() : null,
-//   }
-//   console.log(newToonQues)
-//   questions.push(newToonQues)
-//   render()
-// }
 
 function disneyQuiz() {
   toonBtnEl.style.visibility = 'hidden'

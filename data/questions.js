@@ -331,7 +331,7 @@ const randomQuestions = [
 ]
 
 function getNickQuestions() {
-  return nickQuestions[Math.floor(Math.random() * nickQuestions.length)]
+return nickQuestions[Math.floor(Math.random() * nickQuestions.length)]
 }
 
 function getToonQuestions() {
@@ -356,3 +356,13 @@ export {
   disneyQuestions,
   randomQuestions
 }
+
+// let ranNickQuestions = []
+// let i = nickQuestions.length
+// let q = 0
+
+// while(i--) {
+//   q = Math.floor(Math.random() * (i+1))
+//   ranNickQuestions.push(nickQuestions[q])
+//   nickQuestions.splice(q, 1)
+// }
