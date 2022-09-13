@@ -12,7 +12,11 @@ nav {
   justify-content: space-around;
 }
 
-/* main {
-  display: flex;
-  justify-content: space-evenly;
-} */
+button {
+  margin: 10px;
+  background-color: cyan;
+}
+
+button:hover {
+  background-color: gold;
+}

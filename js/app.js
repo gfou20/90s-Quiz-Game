@@ -28,11 +28,11 @@ const toonBtnEl = document.getElementById("toon-btn")
 const disneyBtnEl = document.getElementById("disney-btn")
 const randomBtnEl = document.getElementById("random-btn")
 let quizContainerEL = document.getElementById("quizzes")
-const submitBtnEl =document.getElementById("finish")
-const resetBtnEl = document.getElementById("reset")
+// const submitBtnEl =document.getElementById("finish")
+// const resetBtnEl = document.getElementById("reset")
 const mainBtnEL = document.getElementById("return-to-main")
-let countdownEl = document.getElementById('countdown')
 const quizArea = document.getElementById("quiz")
+let countdownEl = document.getElementById('countdown')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -40,6 +40,7 @@ nickBtnEl.addEventListener('click', nickQuiz)
 toonBtnEl.addEventListener('click', toonQuiz)
 disneyBtnEl.addEventListener('click', disneyQuiz)
 randomBtnEl.addEventListener('click', randomQuiz)
+
 // submitBtnEl.addEventListener('click', submit)
 // resetBtnEl.addEventListener('click', reset)
 // mainBtnEL.addEventListener('click', returnMain)
@@ -89,6 +90,11 @@ function randomQuiz() {
   })
 }
 
+function handleClick() {
+  nickBtnEl.style.visibility = 'hidden'
+  nickQuiz()
+  
+}
 // function submit(evt) {
 
 // }
