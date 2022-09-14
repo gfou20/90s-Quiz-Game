@@ -27,14 +27,13 @@ const nickBtnEl = document.getElementById("nick-btn")
 const toonBtnEl = document.getElementById("toon-btn")
 const disneyBtnEl = document.getElementById("disney-btn")
 const randomBtnEl = document.getElementById("random-btn")
-let quizContainerEL = document.getElementById("quizzes")
 const pEl = document.querySelectorAll(".quiz-text")
 const quizBtnEL =document.querySelectorAll(".quiz-btns")
-// const submitBtnEl =document.getElementById("finish")
-// const resetBtnEl = document.getElementById("reset-btn")
-const mainBtnEL = document.getElementById("return-to-main")
+const submitBtnEl =document.getElementById("finish")
 const quizArea = document.getElementById("quiz")
 let countdownEl = document.getElementById('countdown')
+// const favicon = document.querySelector("favicon")
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -45,10 +44,9 @@ randomBtnEl.addEventListener('click', randomQuiz)
 quizBtnEL.forEach(b => {
   b.addEventListener('click', handleClick)
 })
-// quizArea.addEventListener('click', handleClick)
-// submitBtnEl.addEventListener('click', submit)
-// resetBtnEl.addEventListener('reset', renderQuestion)
-// mainBtnEL.addEventListener('click', returnMain)
+submitBtnEl.addEventListener('click', showScore)
+
+
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -66,6 +64,15 @@ function renderQuestion(quesObj) {
   quizArea.append(question, btn1, btn2, btn3, btn4)
 }
 
+function handleClick() {
+  nickBtnEl.style.visibility = 'hidden'
+  toonBtnEl.style.visibility = 'hidden'
+  disneyBtnEl.style.visibility = 'hidden'
+  randomBtnEl.style.visibility = 'hidden'
+  pEl.forEach(p => {
+    p.style.visibility = 'hidden'
+  })
+}
 
 function nickQuiz() {
   nickQuestions.forEach(q => {
@@ -88,24 +95,15 @@ function disneyQuiz() {
 function randomQuiz() {
   randomQuestions.forEach(q => {
     renderQuestion(q)
+    console.log()
   })
 }
 
-function handleClick() {
-  nickBtnEl.style.visibility = 'hidden'
-  toonBtnEl.style.visibility = 'hidden'
-  disneyBtnEl.style.visibility = 'hidden'
-  randomBtnEl.style.visibility = 'hidden'
+
+function showScore() {
+  const ansArea = quizArea
+  let ansCorr = 0
+  nickQuestions.forEach((ans, corr) => {
+    
+  })
 }
-
-// function submit(evt) {
-
-// }
-
-// function reset(evt) {
-  
-// }
-
-// function returnMain(evt) {
-
-// }
