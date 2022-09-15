@@ -145,7 +145,11 @@ function timeStart() {
   countdownEl.textContent = timeLeft + ' seconds remaining'
   if(timeLeft === 0) {
     countdownEl.textContent = 'Times Up!'
+    quizArea.style.visibility = 'hidden'
+    resetBtn.style.visibility = 'visible'
     clearInterval(timer)
+    console.log(timer)
   }
 }, 1000)
 }
+
