@@ -23,7 +23,7 @@ const quizBtnEL =document.querySelectorAll(".quiz-btns")
 const quizArea = document.getElementById("quiz")
 const resetBtn = document.getElementById("reset-btn")
 let countdownEl = document.getElementById('countdown')
-// const favicon = document.querySelector("favicon")
+const favicon = document.querySelector("favicon")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
@@ -45,7 +45,7 @@ countdownEl.addEventListener('click', handleClick)
 // test.style.height = '500px'
 // body.appendChild(test)
 function changeFavicon() {
-  
+
 }
 
 function reset() {
@@ -122,6 +122,7 @@ function handleClick() {
   pEl.forEach(p => {
     p.style.visibility = 'hidden'
   })
+
   timeStart()
 }
 
@@ -158,7 +159,11 @@ function timeStart() {
     resetBtn.style.visibility = 'visible'
     clearInterval(timer)
     reset()
+    } else if(answers.length === 8) {
+      countdownEl.textContent = "Let's see how you did!"
+      clearInterval(timer)
     }
+    console.log(timeLeft)
   }, 1000)
   
 }
