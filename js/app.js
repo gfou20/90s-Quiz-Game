@@ -42,6 +42,7 @@ countdownEl.addEventListener('click', handleClick)
 function reset() {
   answers = []
   totalPoints = 0
+  timeLeft = 25
   quizArea.innerHTML = ''
   nickBtnEl.style.visibility = 'visible'
   toonBtnEl.style.visibility = 'visible'
@@ -148,8 +149,9 @@ function timeStart() {
     quizArea.style.visibility = 'hidden'
     resetBtn.style.visibility = 'visible'
     clearInterval(timer)
-    console.log(timer)
-  }
-}, 1000)
+    reset()
+    }
+  }, 1000)
+  
 }
 
