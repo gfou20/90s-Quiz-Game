@@ -86,6 +86,7 @@ function renderQuestion(quesObj) {
       quizArea.append(messDiv)
       let mess = document.createElement('h1')
       messDiv.append(mess)
+      resetBtn.removeAttribute('hidden')
       if(totalPoints === 8){
         mess.textContent = `Your score is ${totalPoints}! You win!! Perfect Score!!`
         confetti.start(2000)
@@ -93,7 +94,6 @@ function renderQuestion(quesObj) {
         mess.textContent = `Your score is ${totalPoints}! You win!! You know your stuff!!`
       } else {
         mess.textContent = `Your score is ${totalPoints}! You lose!!Try again?!`
-        resetBtn.style.display = 'block'
       }
     }
   }
@@ -104,7 +104,7 @@ function handleClick() {
   toonBtnEl.style.visibility = 'hidden'
   disneyBtnEl.style.visibility = 'hidden'
   randomBtnEl.style.visibility = 'hidden'
-  resetBtn.style.visibility = 'hidden'
+  resetBtn.setAttribute("hidden", true)
   pEl.forEach(p => {
     p.style.visibility = 'hidden'
   })
