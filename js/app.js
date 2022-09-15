@@ -76,7 +76,7 @@ function renderQuestion(quesObj) {
     console.log(selBtn)
     answers.push(selBtn)
     console.log(answers)
-    if(selBtn === quesObj.correctAnswer){
+    if(selBtn === quesObj.correctAnswer) {
       totalPoints++ 
       console.log(totalPoints)
     } 
@@ -88,10 +88,12 @@ function renderQuestion(quesObj) {
       quizArea.append(messDiv)
       let mess = document.createElement('h1')
       messDiv.append(mess)
-      if(totalPoints >= 5){
-        mess.textContent = `Your score is ${totalPoints}! You win!!`
+      if(totalPoints === 8){
+        mess.textContent = `Your score is ${totalPoints}! You win!! Perfect Score!!`
+      } else if(totalPoints >=5) {
+        mess.textContent = `Your score is ${totalPoints}! You win!! You know your stuff!!`
       } else {
-        mess.textContent = `Your score is ${totalPoints} You lose`
+        mess.textContent = `Your score is ${totalPoints}! You lose!!Try again?!`
       }
     }
   }
