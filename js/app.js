@@ -145,8 +145,7 @@ function timeStart() {
   timeLeft -= 1
   countdownEl.textContent = timeLeft + ' seconds remaining'
   if(timeLeft === 0) {
-    countdownEl.textContent = 'Times Up!'
-    quizArea.style.visibility = 'hidden'
+    countdownEl.textContent = 'Times Up! Try again?'
     resetBtn.style.visibility = 'visible'
     clearInterval(timer)
     reset()
