@@ -20,6 +20,16 @@ const disneyAudio = new Audio('../assets/audio/timon.mp3')
 
 const randomAudio = new Audio('../assets/audio/family-guy.mp3')
 
+const perfectAudio = new Audio('../assets/audio/perfect.mp3')
+
+const goodAudio = new Audio('../assets/audio/good-good.mp3')
+
+const haAudio = new Audio('../assets/audio/haha.mp3')
+
+const slowAudio = new Audio('../assets/audio/sonic-slow.mp3')
+
+const disAudio = new Audio('../assets/audio/disqualified.mp3')
+
 /*------------------------ Cached Element References ------------------------*/
 
 const nickBtnEl = document.getElementById("nick-btn")
@@ -124,10 +134,16 @@ function renderQuestion(quesObj) {
       if(totalPoints === 8){
         mess.textContent = `Your score is ${totalPoints}! You win!! Perfect Score!!`
         confetti.start(2000)
+        perfectAudio.volume = .30
+        perfectAudio.play()
       } else if(totalPoints >=5) {
         mess.textContent = `Your score is ${totalPoints}! You win!! You know your stuff!!`
+        goodAudio.volume = .40
+        goodAudio.play()
       } else {
         mess.textContent = `Your score is ${totalPoints}! You lose!!Try again?!`
+        haAudio.volume = .40
+        haAudio.play()
       }
     }
   }
@@ -173,8 +189,13 @@ function timeStart() {
   let timer = setInterval(() => {
   timeLeft -= 1
   countdownEl.textContent = timeLeft + ' seconds remaining'
-  if(timeLeft === 0) {
+  if(timeLeft === 10) {
+    slowAudio.volume = .10
+    slowAudio.play()
+  } else if(timeLeft === 0) {
     countdownEl.textContent = 'Times Up! Try again?'
+    disAudio.volume = .25
+    disAudio.play()
     resetBtn.style.visibility = 'visible'
     clearInterval(timer)
     reset()
@@ -186,3 +207,15 @@ function timeStart() {
   
 }
 
+
+// if(timeLeft === 0) {
+//   countdownEl.textContent = 'Times Up! Try again?'
+//   disAudio.volume = .25
+//   disAudio.play()
+//   resetBtn.style.visibility = 'visible'
+//   clearInterval(timer)
+//   reset()
+//   } else if(answers.length === 8) {
+//     countdownEl.textContent = "Let's see how you did!"
+//     clearInterval(timer)
+//   }
