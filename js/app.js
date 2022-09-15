@@ -12,6 +12,14 @@ let totalPoints = 0
 
 let timeLeft = 25
 
+const nickAudio = new Audio('../assets/audio/spongebob.mp3')
+
+const toonAudio = new Audio('../assets/audio/courage.mp3')
+
+const disneyAudio = new Audio('../assets/audio/timon.mp3')
+
+const randomAudio = new Audio('../assets/audio/family-guy.mp3')
+
 /*------------------------ Cached Element References ------------------------*/
 
 const nickBtnEl = document.getElementById("nick-btn")
@@ -23,14 +31,29 @@ const quizBtnEL =document.querySelectorAll(".quiz-btns")
 const quizArea = document.getElementById("quiz")
 const resetBtn = document.getElementById("reset-btn")
 let countdownEl = document.getElementById('countdown')
-// const favicon = document.querySelector("favicon")
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 nickBtnEl.addEventListener('click', nickQuiz)
+nickBtnEl.addEventListener('click', function() {
+  nickAudio.volume = .10
+  nickAudio.play()
+})
 toonBtnEl.addEventListener('click', toonQuiz)
+toonBtnEl.addEventListener('click', function() {
+  toonAudio.volume = .10
+  toonAudio.play()
+})
 disneyBtnEl.addEventListener('click', disneyQuiz)
+disneyBtnEl.addEventListener('click', function() {
+  disneyAudio.volume = .20
+  disneyAudio.play()
+})
 randomBtnEl.addEventListener('click', randomQuiz)
+randomBtnEl.addEventListener('click', function() {
+  randomAudio.volume = .20
+  randomAudio.play()
+})
 quizBtnEL.forEach(b => {
   b.addEventListener('click', handleClick)
 })
