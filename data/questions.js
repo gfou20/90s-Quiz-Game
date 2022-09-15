@@ -7,7 +7,7 @@ const nickQuestions = [
       c: "Tommy",
       d: "Dill"
     },
-    correctAnswer: "c"
+    correctAnswer: "Tommy"
   }, 
   {
     question: "What was the name of the dinosaur the Rugrats admired?",
@@ -17,7 +17,7 @@ const nickQuestions = [
       c: "Resgar",
       d: "Repter"
     },
-    correctAnswer: "b"
+    correctAnswer: "Reptar"
   },
   {  
     question: "Which show focused on the adolescent life of a teen living in Bluffington?",
@@ -27,7 +27,7 @@ const nickQuestions = [
       c: "My Teenage Robot Life",
       d: "As Told by Ginger"
     },
-    correctAnswer: "a"
+    correctAnswer: "Doug"
   },  
   {
     question: "Who was the secret love interest of the the main character in Doug?",
@@ -37,7 +37,7 @@ const nickQuestions = [
       c: "Beebe",
       d: "Patti"
     },
-    correctAnswer: "d"
+    correctAnswer: "Patti"
   },
   {  
     question: "Which character was known as 'football head'?",
@@ -47,7 +47,7 @@ const nickQuestions = [
       c: "Arnold",
       d: "Danny"
     },
-    correctAnswer: "c"
+    correctAnswer: "Arnold"
   },
   {  
     question: "Which character always made fun of Arnold, but secretly liked him?",
@@ -57,7 +57,7 @@ const nickQuestions = [
       c: "Phoebe",
       d: "Lila"
     },
-    correctAnswer: "a"
+    correctAnswer: "Helga"
   },
   {  
     question: "What is the name of the restaurant SpongeBob works at?",
@@ -67,7 +67,7 @@ const nickQuestions = [
       c: "Good Burger",
       d: "Crusty Crab"
     },
-    correctAnswer: "b"
+    correctAnswer: "Krusty Crab"
   },
   {  
     question: "What is the name of Spongebob’s neighbor who always wants to be left alone?",
@@ -77,7 +77,7 @@ const nickQuestions = [
       c: "Squidward",
       d: "Mr.Krabs"
     },
-    correctAnswer: "c"
+    correctAnswer: "Squidward"
   }  
 ]
 
