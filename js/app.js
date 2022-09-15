@@ -1,4 +1,5 @@
 import {nickQuestions, toonQuestions, disneyQuestions, randomQuestions} from "../data/questions.js"
+import {confetti} from "./confetti.js"
 /*-------------------------------- Constants --------------------------------*/
 
 
@@ -87,10 +88,12 @@ function renderQuestion(quesObj) {
       messDiv.append(mess)
       if(totalPoints === 8){
         mess.textContent = `Your score is ${totalPoints}! You win!! Perfect Score!!`
+        confetti.start(2000)
       } else if(totalPoints >=5) {
         mess.textContent = `Your score is ${totalPoints}! You win!! You know your stuff!!`
       } else {
         mess.textContent = `Your score is ${totalPoints}! You lose!!Try again?!`
+        resetBtn.style.display = 'block'
       }
     }
   }
