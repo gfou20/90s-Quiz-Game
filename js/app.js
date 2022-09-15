@@ -54,10 +54,10 @@ function reset() {
   toonBtnEl.style.visibility = 'visible'
   disneyBtnEl.style.visibility = 'visible'
   randomBtnEl.style.visibility = 'visible'
+  resetBtn.style.visibility = 'hidden'
   pEl.forEach(p => {
     p.style.visibility = 'visible'
   })
-  console.log('hit')
 }
 
 function renderQuestion(quesObj) {
@@ -84,7 +84,6 @@ function renderQuestion(quesObj) {
   btn3.addEventListener('click', result)
   btn4.addEventListener('click', result)
   function result(e) {
-    console.log(answers.length)
     let selBtn = e.target.textContent
     answers.push(selBtn)
     if(selBtn === quesObj.correctAnswer) {
