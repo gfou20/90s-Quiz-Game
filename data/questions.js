@@ -90,7 +90,7 @@ const toonQuestions = [
       c: "Chemical Y",
       d: "Chemical X"
     },
-    correctAnswer: "d"
+    correctAnswer: "Chemical X"
   },
   {  
     question: "Which character used to be friends with Professor Utonium?",
@@ -100,7 +100,7 @@ const toonQuestions = [
       c: "Princess Morbucks",
       d: "HIM"
     },
-    correctAnswer: "b"
+    correctAnswer: "Mojo Jojo"
   },
   {  
     question: "Which 'Ed' was the brains in trio Ed, Edd and Eddy?",
@@ -110,7 +110,7 @@ const toonQuestions = [
       c: "Eddy",
       d: "None of them were smart"
     },
-    correctAnswer: "b"
+    correctAnswer: "Edd"
   },
   {  
     question: "What was Ed, Edd and Eddy’s favorite candy?",
@@ -120,7 +120,7 @@ const toonQuestions = [
       c: "Lollipops",
       d: "Gummies"
     },
-    correctAnswer: "b"
+    correctAnswer: "Jawbreakers"
   },
   {  
     question: "What was the name of Dexter’s annoying sister?",
@@ -130,7 +130,7 @@ const toonQuestions = [
       c: "Dee Dee",
       d: "Denise"
     },
-    correctAnswer: "c"
+    correctAnswer: "Dee Dee"
   },
   {  
     question: "Who was Dexter’s biggest rival?",
@@ -140,7 +140,7 @@ const toonQuestions = [
       c: "Mandork",
       d: "Mandarin"
     },
-    correctAnswer: "b"
+    correctAnswer: "Mandark"
   },
   {  
     question: "Where did Courage, Muriel and Eustace live?",
@@ -150,7 +150,7 @@ const toonQuestions = [
       c: "Dimmsdale",
       d: "Gravity Falls"
     },
-    correctAnswer: "a"
+    correctAnswer: "Middle of Nowhere"
   },
   {  
     question: "Which of these characters made an appearance in Courage the Cowardly Dog?",
@@ -160,7 +160,7 @@ const toonQuestions = [
       c: "Johnny Bravo",
       d: "Finn"
     },
-    correctAnswer: "a"
+    correctAnswer: "Le Quack"
   }  
 ]
 
@@ -173,7 +173,7 @@ const disneyQuestions = [
       c: "London",
       d: "Los Angeles"
     },
-    correctAnswer: "b"
+    correctAnswer: "New York City"
   },
   {  
     question: "What was the name of the leader of the Gargoyles?",
@@ -183,7 +183,7 @@ const disneyQuestions = [
       c: "Demona",
       d: "Goliath"
     },
-    correctAnswer: "d"
+    correctAnswer: "Goliath"
   },
   {  
     question: "What was the favorite quote used to describe the lifestyle philosophy of Timon and Pumbaa?",
@@ -193,7 +193,7 @@ const disneyQuestions = [
       c: "Laguna Matata",
       d: "Akuma Matata"
     },
-    correctAnswer: "a"
+    correctAnswer: "Hakuna Matata"
   },
   {  
     question: "What animals were Timon and Pumbaa?",
@@ -203,7 +203,7 @@ const disneyQuestions = [
       c: "Monkey and Meerkat",
       d: "Rabbit and Warthog"
     },
-    correctAnswer: "b"
+    correctAnswer: "Meerkat and Warthog"
   },
   {  
     question: "What is the name of Aladdin’s best friend?",
@@ -213,7 +213,7 @@ const disneyQuestions = [
       c: "Rajah",
       d: "Jafar"
     },
-    correctAnswer: "a"
+    correctAnswer: "Abu"
   },
   {  
     question: "Where did Aladdin find the Genie’s lamp?",
@@ -223,7 +223,7 @@ const disneyQuestions = [
       c: "Cave of Sand",
       d: "Cave of Mystery"
     },
-    correctAnswer: "b"
+    correctAnswer: "Cave of Wonders"
   },
   {  
     question: "How did Pepper Ann usually show her emotions?",
@@ -233,7 +233,7 @@ const disneyQuestions = [
       c: "Crying",
       d: "Laughing"
     },
-    correctAnswer: "a"
+    correctAnswer: "Fantasies"
   },
   {  
     question: "Pepper Ann was the first Disney animated tv series to:",
@@ -243,7 +243,7 @@ const disneyQuestions = [
       c: "have a female lead protagonist",
       d: "be created by a woman"
     },
-    correctAnswer: "d"
+    correctAnswer: "be created by a woman"
   }  
 ]
 
@@ -256,7 +256,7 @@ const randomQuestions = [
       c: "Tak",
       d: "Jak"
     },
-    correctAnswer: "a"
+    correctAnswer: "Brak"
   },
   {  
     question: "Space Ghost went from fighting crime to:",
@@ -266,7 +266,7 @@ const randomQuestions = [
       c: "commiting crimes",
       d: "a late night talk show host"
     },
-    correctAnswer: "d"
+    correctAnswer: "a late night talk show host"
   },
   {  
     question: "Which South Park character always comes back after dying?",
@@ -276,7 +276,7 @@ const randomQuestions = [
       c: "Stan",
       d: "Butters"
     },
-    correctAnswer: "b"
+    correctAnswer: "Kenny"
   },
   {  
     question: "Where does South Park take place?",
@@ -286,7 +286,7 @@ const randomQuestions = [
       c: "Alaska",
       d: "Ohio"
     },
-    correctAnswer: "b"
+    correctAnswer: "Colorado"
   },
   {  
     question: "Which Family Guy character usually fights Peter 'on sight'?",
@@ -296,7 +296,7 @@ const randomQuestions = [
       c: "Seamus",
       d: "Ernie the Giant Chicken"
     },
-    correctAnswer: "d"
+    correctAnswer: "Ernie the Giant Chicken"
   },
   {  
     question: "Which Family Guy character usually gives a 'Giggity' as perverse behavior?",
@@ -306,7 +306,7 @@ const randomQuestions = [
       c: "Cleveland",
       d: "Peter"
     },
-    correctAnswer: "b"
+    correctAnswer: "Quagmire"
   },
   {  
     question: "'Bite my shiny metal a**' is a favorite phrase of which Futurama character?",
@@ -316,7 +316,7 @@ const randomQuestions = [
       c: "Zoidberg",
       d: "Leela"
     },
-    correctAnswer: "a"
+    correctAnswer: "Bender"
   },
   {  
     question: "What year was Fry in when he was cryogenically frozen?",
@@ -326,7 +326,7 @@ const randomQuestions = [
       c: "1998",
       d: "2000"
     },
-    correctAnswer: "d"
+    correctAnswer: "2000"
   }  
 ]
 
