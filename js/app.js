@@ -12,15 +12,6 @@ let totalPoints = 0
 
 let timeLeft = 25
 
-// let timer = setInterval(() => {
-//   timeLeft -= 1
-//   countdownEl.textContent = timeLeft + ' seconds remaining'
-//   if(timeLeft === 0) {
-//     countdownEl.textContent = 'Times Up!'
-//     clearInterval(timer)
-//   }
-// }, 1000)
-
 /*------------------------ Cached Element References ------------------------*/
 
 const nickBtnEl = document.getElementById("nick-btn")
@@ -44,6 +35,7 @@ quizBtnEL.forEach(b => {
   b.addEventListener('click', handleClick)
 })
 resetBtn.addEventListener('click', reset)
+countdownEl.addEventListener('click', handleClick)
 
 /*-------------------------------- Functions --------------------------------*/
 
@@ -120,6 +112,7 @@ function handleClick() {
   pEl.forEach(p => {
     p.style.visibility = 'hidden'
   })
+  timeStart()
 }
 
 function nickQuiz() {
@@ -144,4 +137,15 @@ function randomQuiz() {
   randomQuestions.forEach(q => {
     renderQuestion(q)
   })
+}
+
+function timeStart() {
+  let timer = setInterval(() => {
+  timeLeft -= 1
+  countdownEl.textContent = timeLeft + ' seconds remaining'
+  if(timeLeft === 0) {
+    countdownEl.textContent = 'Times Up!'
+    clearInterval(timer)
+  }
+}, 1000)
 }
