@@ -38,6 +38,15 @@ resetBtn.addEventListener('click', reset)
 countdownEl.addEventListener('click', handleClick)
 
 /*-------------------------------- Functions --------------------------------*/
+// const body = document.querySelector('body')
+// const test = document.createElement('img')
+// test.src = 'assets/images/courage.jpeg'
+// test.style.width = '500px'
+// test.style.height = '500px'
+// body.appendChild(test)
+function changeFavicon() {
+  
+}
 
 function reset() {
   answers = []
