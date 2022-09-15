@@ -6,7 +6,7 @@ import {confetti} from "./confetti.js"
 
 /*-------------------------------- Variables --------------------------------*/
 
-const answers = []
+let answers = []
 
 let totalPoints = 0
 
@@ -30,8 +30,8 @@ const randomBtnEl = document.getElementById("random-btn")
 const pEl = document.querySelectorAll(".quiz-text")
 const quizBtnEL =document.querySelectorAll(".quiz-btns")
 const quizArea = document.getElementById("quiz")
+const resetBtn = document.getElementById("reset-btn")
 let countdownEl = document.getElementById('countdown')
-const resetBtn = document.getElementById("reset-main")
 // const favicon = document.querySelector("favicon")
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -43,11 +43,22 @@ randomBtnEl.addEventListener('click', randomQuiz)
 quizBtnEL.forEach(b => {
   b.addEventListener('click', handleClick)
 })
-
+resetBtn.addEventListener('click', reset)
 
 /*-------------------------------- Functions --------------------------------*/
 
-
+function reset() {
+  answers = []
+  quizArea.innerHTML = ''
+  nickBtnEl.style.visibility = 'visible'
+  toonBtnEl.style.visibility = 'visible'
+  disneyBtnEl.style.visibility = 'visible'
+  randomBtnEl.style.visibility = 'visible'
+  pEl.forEach(p => {
+    p.style.visibility = 'visible'
+  })
+  console.log('hit')
+}
 
 function renderQuestion(quesObj) {
   const div = document.createElement('div')
@@ -73,6 +84,7 @@ function renderQuestion(quesObj) {
   btn3.addEventListener('click', result)
   btn4.addEventListener('click', result)
   function result(e) {
+    console.log(answers.length)
     let selBtn = e.target.textContent
     answers.push(selBtn)
     if(selBtn === quesObj.correctAnswer) {
@@ -86,7 +98,7 @@ function renderQuestion(quesObj) {
       quizArea.append(messDiv)
       let mess = document.createElement('h1')
       messDiv.append(mess)
-      resetBtn.removeAttribute('hidden')
+      resetBtn.style.visibility = 'visible'
       if(totalPoints === 8){
         mess.textContent = `Your score is ${totalPoints}! You win!! Perfect Score!!`
         confetti.start(2000)
@@ -104,7 +116,7 @@ function handleClick() {
   toonBtnEl.style.visibility = 'hidden'
   disneyBtnEl.style.visibility = 'hidden'
   randomBtnEl.style.visibility = 'hidden'
-  resetBtn.setAttribute("hidden", true)
+  resetBtn.style.visibility = 'hidden'
   pEl.forEach(p => {
     p.style.visibility = 'hidden'
   })
