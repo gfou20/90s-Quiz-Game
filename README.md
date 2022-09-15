@@ -1,6 +1,6 @@
 # 90s Cartoon Quiz Game
 
-<div style="height:30rem; width:auto; text-align:center;">
+<div style="height:auto; width:auto; text-align:center;">
 
 <img src="./assets/90s-quiz.png">
 
