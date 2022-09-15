@@ -1,8 +1,5 @@
 import {nickQuestions, toonQuestions, disneyQuestions, randomQuestions} from "../data/questions.js"
 import {confetti} from "./confetti.js"
-/*-------------------------------- Constants --------------------------------*/
-
-
 
 /*-------------------------------- Variables --------------------------------*/
 
@@ -71,12 +68,6 @@ resetBtn.addEventListener('click', reset)
 countdownEl.addEventListener('click', handleClick)
 
 /*-------------------------------- Functions --------------------------------*/
-// const body = document.querySelector('body')
-// const test = document.createElement('img')
-// test.src = 'assets/images/courage.jpeg'
-// test.style.width = '500px'
-// test.style.height = '500px'
-// body.appendChild(test)
 
 function reset() {
   answers = []
@@ -206,16 +197,3 @@ function timeStart() {
   }, 1000)
   
 }
-
-
-// if(timeLeft === 0) {
-//   countdownEl.textContent = 'Times Up! Try again?'
-//   disAudio.volume = .25
-//   disAudio.play()
-//   resetBtn.style.visibility = 'visible'
-//   clearInterval(timer)
-//   reset()
-//   } else if(answers.length === 8) {
-//     countdownEl.textContent = "Let's see how you did!"
-//     clearInterval(timer)
-//   }
