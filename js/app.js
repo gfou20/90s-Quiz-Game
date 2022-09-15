@@ -49,6 +49,7 @@ resetBtn.addEventListener('click', reset)
 
 function reset() {
   answers = []
+  totalPoints = 0
   quizArea.innerHTML = ''
   nickBtnEl.style.visibility = 'visible'
   toonBtnEl.style.visibility = 'visible'
