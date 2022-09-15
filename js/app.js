@@ -33,7 +33,6 @@ let countdownEl = document.getElementById('countdown')
 const resetBtn = document.getElementById("reset-main")
 // const favicon = document.querySelector("favicon")
 
-
 /*----------------------------- Event Listeners -----------------------------*/
 
 nickBtnEl.addEventListener('click', nickQuiz)
@@ -46,6 +45,8 @@ quizBtnEL.forEach(b => {
 
 
 /*-------------------------------- Functions --------------------------------*/
+
+
 
 function renderQuestion(quesObj) {
   const div = document.createElement('div')
