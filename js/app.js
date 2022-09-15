@@ -30,6 +30,7 @@ const pEl = document.querySelectorAll(".quiz-text")
 const quizBtnEL =document.querySelectorAll(".quiz-btns")
 const quizArea = document.getElementById("quiz")
 let countdownEl = document.getElementById('countdown')
+const resetBtn = document.getElementById("reset-main")
 // const favicon = document.querySelector("favicon")
 
 
@@ -42,6 +43,7 @@ randomBtnEl.addEventListener('click', randomQuiz)
 quizBtnEL.forEach(b => {
   b.addEventListener('click', handleClick)
 })
+
 
 /*-------------------------------- Functions --------------------------------*/
 
