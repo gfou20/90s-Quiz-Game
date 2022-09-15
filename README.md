@@ -1,5 +1,7 @@
 # 90s Cartoon Quiz Game
 
+<img src="./assets/90s-quiz.png">
+
 ## About
 
 I loved watching cartoons as a kid and some shows have stuck with me throughout my life. These are just a few I enjoyed watching. 
