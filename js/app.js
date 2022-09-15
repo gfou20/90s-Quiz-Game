@@ -5,8 +5,6 @@ import {nickQuestions, toonQuestions, disneyQuestions, randomQuestions} from "..
 
 /*-------------------------------- Variables --------------------------------*/
 
-const questions = []
-
 const answers = []
 
 let totalPoints = 0
@@ -21,7 +19,6 @@ let timeLeft = 25
 //     clearInterval(timer)
 //   }
 // }, 1000)
-
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -73,12 +70,9 @@ function renderQuestion(quesObj) {
   btn4.addEventListener('click', result)
   function result(e) {
     let selBtn = e.target.textContent
-    console.log(selBtn)
     answers.push(selBtn)
-    console.log(answers)
     if(selBtn === quesObj.correctAnswer) {
       totalPoints++ 
-      console.log(totalPoints)
     } 
     if(selBtn){
       div.style.visibility = 'hidden'
@@ -99,7 +93,6 @@ function renderQuestion(quesObj) {
   }
 }
 
-
 function handleClick() {
   nickBtnEl.style.visibility = 'hidden'
   toonBtnEl.style.visibility = 'hidden'
@@ -109,14 +102,6 @@ function handleClick() {
     p.style.visibility = 'hidden'
   })
 }
-
-function showScore() {
-  const ansArea = quizArea.querySelectorAll('.btns')
-  let ansCorr = 0
-  console.log(ansArea)
-  
-}
-showScore()
 
 function nickQuiz() {
   nickQuestions.forEach(q => {
@@ -139,6 +124,5 @@ function disneyQuiz() {
 function randomQuiz() {
   randomQuestions.forEach(q => {
     renderQuestion(q)
-    console.log()
   })
 }
