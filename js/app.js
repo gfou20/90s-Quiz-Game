@@ -101,6 +101,7 @@ function handleClick() {
   toonBtnEl.style.visibility = 'hidden'
   disneyBtnEl.style.visibility = 'hidden'
   randomBtnEl.style.visibility = 'hidden'
+  resetBtn.style.visibility = 'hidden'
   pEl.forEach(p => {
     p.style.visibility = 'hidden'
   })
