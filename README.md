@@ -34,7 +34,7 @@ Enjoy!
 
 ## Thanks to
 
--Background image from [freepik]https://www.freepik.com/free-photos-vectors/cartoon-background
+-Background image from [freepik](https://www.freepik.com/free-photos-vectors/cartoon-background)
 
 -Font style from [Google Fonts](https://fonts.google.com/specimen/Press+Start+2P)
 
