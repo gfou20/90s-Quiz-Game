@@ -15,15 +15,21 @@ Enjoy!
 ## Rules
 
 - Select a category to start the quiz
+- 
 - Answer all 8 questions to find out your score
+- 
 - Each question is worth 1 point
+- 
 - If time runs out, its Game Over!
 
 ## Technologies Used 
 
 -HTML
+
 -CSS
+
 -Javascript
+
 -[Whimsical](https://whimsical.com/getting-started-boards-QqL4VfuNCsszsBUCWumEn1)
 
 ## Thanks to
@@ -36,7 +42,10 @@ Enjoy!
 
 ## Coming Soon
 
--90s-Cartoon-Quiz-Game will be updated to include:
+90s-Cartoon-Quiz-Game will be updated to include:
+
 -New cartoon quizes to choose from
+
 -More images and audio to bring back some 90s nostaligia
+
 -Mobile version on the way!
