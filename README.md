@@ -15,11 +15,11 @@ Enjoy!
 ## Rules
 
 - Select a category to start the quiz
-- 
+
 - Answer all 8 questions to find out your score
-- 
+  
 - Each question is worth 1 point
-- 
+  
 - If time runs out, its Game Over!
 
 ## Technologies Used 
