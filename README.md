@@ -1,6 +1,6 @@
 # 90s Cartoon Quiz Game
 
-![Alt text](assets/images/90s-quiz.png)
+![Alt text](./assets/images/90s-quiz.png)
 
 ## About
 
